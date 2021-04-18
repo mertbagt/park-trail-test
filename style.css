@@ -9,11 +9,15 @@ body {
   margin: 0;
 }
 
+header, .border, .contact-container {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
 header h1 {
   color: #F8F4E3;
   text-align: center;
-  margin: 0;
-  padding-top: 20px;
+  margin: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 42px;
 }
@@ -29,7 +33,9 @@ article {
 }
 
 h2 {
-  margin: 0 0 19px 0
+  flex-basis: 100%;
+  margin: 0 0 19px 0;
+  text-align: center;
 }
 
 img {
@@ -37,13 +43,11 @@ img {
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
-  width: 250px
+  width: 250px;
 }
 
-.border {
-  border-bottom-style: 1px solid black;
-  border-left-style: 1px solid black;
-  border-right-style: 1px solid black;
+.border, .contact-container {
+  border-bottom: 1px solid black;
 }
 
 .contact-container {
@@ -52,12 +56,14 @@ img {
   padding-bottom: 5px;
   padding-left: 10px;
   height: auto;
-  border-bottom-style: 1px solid black;
-  border-left-style: 1px solid black;
-  border-right-style: 1px solid black;
 }
 
 .large {
+  max-height: 0;
+  visibility: hidden;
+}
+
+.supplement {
   max-height: 0;
   visibility: hidden;
 }
@@ -66,6 +72,7 @@ img {
 .group {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .item {
