@@ -16,10 +16,11 @@ header, .border, .contact-container {
 
 header h1 {
   color: #F8F4E3;
-  text-align: center;
-  margin: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 42px;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
 }
 
 main div {
