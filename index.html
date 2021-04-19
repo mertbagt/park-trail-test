@@ -5,7 +5,27 @@
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="Merritt Baggett">
     <title>Park Trail Test</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+      *{box-sizing: border-box;}
+      body{background-color: #01707d;font-family: Helvetica, Arial, sans-serif;margin: 0;}
+      header,.border,.contact-container{border-left: 1px solid black;border-right: 1px solid black;}
+      header h1{color: #F8F4E3;font-family: Georgia, 'Times New Roman', Times, serif;font-size: 42px;margin: 0;padding: 20px;text-align: center;}
+      main div{height: auto;padding-bottom: 5%;}
+      article{display: inline-block;margin: 2%;}
+      h2{flex-basis: 100%;margin: 0 0 19px 0;text-align: center;}
+      img{display: block;margin-bottom: 10px;margin-left: auto;margin-right: auto;width: 250px;}
+      .rockFalls,.trail,.creek{height: 187px}
+      .hills{height: 332px}
+      .border,.contact-container{border-bottom: 1px solid black;}
+      .contact-container{background-color: #F8F4E3;padding-top: 1px;padding-bottom: 5px;padding-left: 10px;height: auto;}
+      .large{max-height: 0;visibility: hidden;}
+      .supplement{max-height: 0;visibility: hidden;}
+      .group{display: flex;flex-direction: column;flex-wrap: wrap;}
+      .item{flex: 1;}
+      @media all and (min-width: 400px){img{width: 320px}.rockFalls,.trail,.creek{height: 240px}.hills{height: 426px}}
+    </style>
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
   </head>
 
   <body>
@@ -61,10 +81,6 @@
           <li><a href="https://github.com/mertbagt" target="_blank">GitHub</a></li>
         </ul>
       </div>  
-    </footer>
-<!--
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
--->    
+    </footer>  
   </body>
 </html>
